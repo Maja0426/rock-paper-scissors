@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/7f46da79ec.js"></script>
+  <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+  <div id="app">
+    <section class="bg" v-if="!gameIsRunning">
+        <h1 class="main-title">Rock-Paper-Scissors</h1>
+      <button class="startButton" @click="startGame">start game</button>
+    </section>
+    <section class="players" v-else>
+        <h1>Rock-Paper-Scissors</h1>
+      <button class="startButton" @click="reset">Reset</button>
+      <div>
+        <h2 id="player">Player Score: <span>{{ playerScore }}</span></h2>
+        <h3>{{ playerChoose }}</h3>
+    </div>
+    <div>
+      <h2 id="cpu">CPU Score: <span>{{ cpuScore }}</span></h2>
+      <h3>{{ cpuChoose }}</h3>
+    </div>
+      <div class="buttons">
+        <span><i class="fas fa-hand-rock" @click="rock"></i></span>
+        <span><i class="fas fa-hand-paper" @click="paper"></i></i></span>
+        <span><i class="fas fa-hand-scissors" @click="scissors"></i></span>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="main.js"></script>
+</body>
+</html>
