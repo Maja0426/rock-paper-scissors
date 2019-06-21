@@ -17,14 +17,16 @@
     <section class="players" v-else>
         <h1>Rock-Paper-Scissors</h1>
       <button class="startButton" @click="reset">Reset</button>
-      <div>
-        <h2 id="player">Player Score: <span>{{ playerScore }}</span></h2>
-        <h3>{{ playerChoose }}</h3>
-    </div>
-    <div>
-      <h2 id="cpu">CPU Score: <span>{{ cpuScore }}</span></h2>
-      <h3>{{ cpuChoose }}</h3>
-    </div>
+      <div class="scores">
+        <div class="bar">
+          <h2 id="player">Player: <span>{{ playerScore }}</span></h2>
+          <h3>{{ playerChoose }}</h3>
+        </div>
+        <div class="bar">
+          <h2 id="cpu">Computer: <span>{{ cpuScore }}</span></h2>
+          <h3>{{ cpuChoose }}</h3>
+        </div>
+      </div>
       <div class="buttons">
         <span><i class="fas fa-hand-rock" @click="rock"></i></span>
         <span><i class="fas fa-hand-paper" @click="paper"></i></i></span>

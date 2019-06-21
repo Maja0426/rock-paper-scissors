@@ -61,13 +61,13 @@ h1.main-title {
   height: 70vh;
 }
 
-.players div {
+.players .bar {
   display: inline-block;
   padding: 1rem;
   margin: 1rem;
 }
 
-.players div h2 {
+.players .bar h2 {
   padding: 1rem;
   margin: 1rem;
 }
@@ -86,7 +86,7 @@ h1.main-title {
   font-size: 300px;
   display: inline-block;
   margin: 2rem;
-  color: indianred;
+  color: #777;
   transition: all, 0.2s;
 }
 
@@ -124,13 +124,13 @@ body {
     max-height: 100vh;
   }
 
-  .players div {
+  .players .bar {
     display: inline-block;
     padding: .3rem;
     margin: .3rem 0;
   }
 
-  .players div h2 {
+  .players .bar h2 {
     font-size: 16px;
     padding: .3rem;
     margin: .3rem 0;
